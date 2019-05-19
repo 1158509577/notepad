@@ -40,4 +40,14 @@
     <string name="error_title">Error</string>
     <string name="error_message">Error loading note</string>
     <string name="nothing_to_save">There is nothing to save</string>
+    <string name="menu_export" />
+    <string name="menu_color" />
+    <string name="menu_sort1" />
+    <string name="menu_sort2" />
+    <string name="menu_sort3" />
+    <string name="menu_search" />
+    <string name="menu_sort" />
+    <string name="export_ok" />
+    <string name="title_notes_search" />
+    <string name="export_name" />
 </resources>

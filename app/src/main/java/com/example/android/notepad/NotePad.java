@@ -19,6 +19,7 @@ package com.example.android.notepad;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
+
 /**
  * Defines a contract between the Note Pad content provider and its clients. A contract defines the
  * information that a client needs to access the provider as one or more data tables. A contract
@@ -88,20 +89,20 @@ public final class NotePad {
          * append a numeric note id to this Uri to retrieve a note
          */
         public static final Uri CONTENT_ID_URI_BASE
-            = Uri.parse(SCHEME + AUTHORITY + PATH_NOTE_ID);
+                = Uri.parse(SCHEME + AUTHORITY + PATH_NOTE_ID);
 
         /**
          * The content URI match pattern for a single note, specified by its ID. Use this to match
          * incoming URIs or to construct an Intent.
          */
         public static final Uri CONTENT_ID_URI_PATTERN
-            = Uri.parse(SCHEME + AUTHORITY + PATH_NOTE_ID + "/#");
+                = Uri.parse(SCHEME + AUTHORITY + PATH_NOTE_ID + "/#");
 
         /**
          * The content Uri pattern for a notes listing for live folders
          */
         public static final Uri LIVE_FOLDER_URI
-            = Uri.parse(SCHEME + AUTHORITY + PATH_LIVE_FOLDER);
+                = Uri.parse(SCHEME + AUTHORITY + PATH_LIVE_FOLDER);
 
         /*
          * MIME type definitions
@@ -150,5 +151,23 @@ public final class NotePad {
          * <P>Type: INTEGER (long from System.curentTimeMillis())</P>
          */
         public static final String COLUMN_NAME_MODIFICATION_DATE = "modified";
+
+        /**
+         * Column name for the background color
+         */
+        public static final String COLUMN_NAME_BACK_COLOR = "color";
+
+        /**
+         * background color
+         */
+        public static final int DEFAULT_COLOR = 0; //白
+        public static final int ANTIQUE_WHITE_COLOR = 1;
+        public static final int SKY_BLUE_COLOR = 2;
+        public static final int VIOLET_COLOR = 3;
+        public static final int PINK_COLOR = 4;
+        public static final int GREEN_COLOR = 5;
+        public static final int LIGHT_CORAL_COLOR = 6;
+        public static final int BLACK_COLOR = 7;
+
     }
 }
